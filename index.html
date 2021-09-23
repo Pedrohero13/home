@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+<ul>
+  <li><a class="active" href="">Home</a></li>
+  <li><a href="http://20.83.227.121:8081/" target="iframe_a">CALCULADORA</a></li>
+  <li><a href="http://20.83.227.121:8080/" target="iframe_a">NG5</a></li>
+</ul>
+<div class="container"> 
+  <iframe class="responsive-iframe" src="home.html" name="iframe_a"></iframe>
+</div>
+
+
+</body>
+</html>
